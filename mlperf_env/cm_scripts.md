@@ -128,7 +128,7 @@ cm run script --tags=run-mlperf,inference,_r4.1-dev,_scc24-main \
   --device=rocm \
   --quiet --precision=float16 \
   --adr.mlperf-implementation.tags=_branch.test,_repo.https://github.com/zixianwang2022/mlperf-scc24 --adr.mlperf-implementation.version=custom  --env.CM_GET_PLATFORM_DETAILS=no \
-  --env.max-batchsize=2
+  --max-batchsize=2
 
 
 # PyTorch & Multi-node Implementation
