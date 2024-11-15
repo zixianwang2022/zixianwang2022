@@ -167,7 +167,7 @@ cm run script --tags=run-mlperf,inference,_r4.1-dev,_scc24-main \
 
 # Estimate qps performance
 ```
-cm run script --tags=run-mlperf,inference,_find-performance,_r4.1-dev,_short,_scc24-base \
+cm run script --tags=run-mlperf,inference,_find-performance,_r4.1-dev,_short \
   --model=sdxl \
   --framework=pytorch \
   --category=datacenter \
