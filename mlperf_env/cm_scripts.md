@@ -14,7 +14,7 @@ cm pull repo
 
 # Official Implementation
 # Performance Estimation for Offline Scenario
-cm run script --tags=run-mlperf,inference,_find-performance,_r4.1-dev,_short,_scc24-base \
+cm run script --tags=run-mlperf,inference,_find-performance,_r4.1-dev,_short \
   --model=sdxl \
   --implementation=reference \
   --framework=pytorch \
