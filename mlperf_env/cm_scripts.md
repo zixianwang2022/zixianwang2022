@@ -268,5 +268,19 @@ cm run script --tags=run-mlperf,inference,_r4.1-dev,_scc24-main \
   --quiet --precision=float16 \
   --adr.mlperf-implementation.tags=_branch.multigpu-mgx-4-pr,_repo.https://github.com/zixianwang2022/inference_4_pr --adr.mlperf-implementation.version=custom  --env.CM_GET_PLATFORM_DETAILS=no \
   --test_query_count=100
+```
+
+# PyTorch Multi-node Implementation
+```
+cm run script --tags=run-mlperf,inference,_r4.1-dev,_scc24-main \
+  --model=sdxl \
+  --framework=pytorch \
+  --category=datacenter \
+  --scenario=Offline \
+  --execution_mode=test \
+  --device=rocm \
+  --quiet --precision=float16 \
+  --adr.mlperf-implementation.tags=_branch.multi-node-torch-4-pr,_repo.https://github.com/zixianwang2022/inference_4_pr --adr.mlperf-implementation.version=custom  --env.CM_GET_PLATFORM_DETAILS=no \
+   --target_qps=1.8
 
 ```
