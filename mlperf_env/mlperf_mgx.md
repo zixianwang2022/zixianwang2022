@@ -18,6 +18,7 @@ pip install scipy
 pip install tabulate
 pip install cmind
 pip install flask
+pip install diffusers
 
 cd ../text_to_image/
 python3 main.py --dataset "coco-1024" --dataset-path coco2014 --profile stable-diffusion-xl-pytorch --model-path /work1/zixian/ziw081/CM/models/SDXL/official_pytorch/fp16/stable_diffusion_fp16/ --dtype fp16 --device cuda --time 30 --scenario Offline --max-batchsize 4 
